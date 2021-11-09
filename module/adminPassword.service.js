@@ -32,7 +32,7 @@ const service= {
         console.log(data)
 
    
-        const link=`http://localhost:3000/adminpassword/${user._id}/${token}`
+        const link=`https://student-task-server.herokuapp.com/adminpassword/${user._id}/${token}`
         
         await sendMail(user.email,"Password Reset",link)
         
