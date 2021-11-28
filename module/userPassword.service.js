@@ -36,7 +36,7 @@ const service= {
         
         await sendMail(user.email,"Password Reset",link)
         
-        res.status(200).send("Link sent to email")  
+        res.status(200).send({id:user._id,token: token})  
     },
     async verifyToken(req,res,next){
            
