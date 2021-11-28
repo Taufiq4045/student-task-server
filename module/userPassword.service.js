@@ -32,7 +32,7 @@ const service= {
         console.log(data)
 
    
-        const link=`http://student-submission-app.herokuapp.com/forgotpassword/${user._id}/${token}`
+        const link=`https://student-submission-app.netlify.app/forgotpassword/${user._id}/${token}`
         
         await sendMail(user.email,"Password Reset",link)
         
