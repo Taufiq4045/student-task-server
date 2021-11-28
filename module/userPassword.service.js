@@ -32,7 +32,8 @@ const service= {
         console.log(data)
 
    
-        const link=`http://student-submission-app.herokuapp.com/forgotpassword/${user._id}/${token}`
+        const link=`http://localhost:3000/forgotpassword/${user._id}/${token}`
+        // http://student-submission-app.herokuapp.com/forgotpassword
         
         await sendMail(user.email,"Password Reset",link)
         
